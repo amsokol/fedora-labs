@@ -1,0 +1,15 @@
+1) Tweal Tool -> Font -> Scaling Factor = 0.90
+
+2) Tweal Tool -> Windows -> Windows Scaling = 2
+
+3)
+cat <<EOF >> $HOME/.config/weston.ini
+[output]
+scale=2
+EOF
+
+4)
+gsettings set org.gnome.desktop.interface scaling-factor 2
+
+
+reboot
